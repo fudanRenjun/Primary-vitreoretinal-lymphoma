@@ -18,11 +18,11 @@ st.title("Primary vitreoretinal lymphoma(PVRL) Prediction App")
 
 # 用户输入特征数据
 pdw = st.number_input("PDW:", min_value=0.0, max_value=100.0, value=10.0)
-monocyte_percent = st.number_input("Monocyte%:", min_value=0.0, max_value=100.0, value=10.0)
-plcr = st.number_input("PLCR:", min_value=0.0, max_value=100.0, value=25.0)
-monocyte = st.number_input("Monocyte:", min_value=0.0, max_value=10.0, value=0.5)
-hg = st.number_input("HG (Hemoglobin):", min_value=0.0, max_value=200.0, value=130.0)
-basophil = st.number_input("Basophil:", min_value=0.0, max_value=1.0, value=0.01)
+monocyte_percent = st.number_input("Monocyte%(%):", min_value=0.0, max_value=100.0, value=10.0)
+plcr = st.number_input("PLCR(%):", min_value=0.0, max_value=100.0, value=25.0)
+monocyte = st.number_input("Monocyte(10^9/L):", min_value=0.0, max_value=10.0, value=0.5)
+hg = st.number_input("HG(g/L):", min_value=0.0, max_value=200.0, value=130.0)
+basophil = st.number_input("Basophil(10^9/L):", min_value=0.0, max_value=1.0, value=0.01)
 
 # 将输入的数据转化为模型的输入格式
 feature_values = [
